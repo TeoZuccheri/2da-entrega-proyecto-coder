@@ -1,0 +1,282 @@
+
+
+body {
+color: brown;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    color: rgb(0, 0, 0);
+}
+
+
+
+/*HEADER*/
+
+
+
+.header {
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav {
+    width: 80%;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+}
+
+
+
+/*HOME*/
+
+
+
+.padre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+
+.imagenes {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*SOBRE NOSOTROS*/
+
+
+
+.logo {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-bottom: 10%;
+}
+
+
+
+#abajo {
+    text-align: center;
+}
+
+
+.headersobre {
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headersobre nav {
+    width: 80%;
+} 
+
+.headersobre nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headersobre nav ul li {
+    list-style: none;
+}
+
+.headersobre nav ul li a {
+    text-decoration: none;
+}
+
+
+#texto {
+    width: 100%;
+    height: 250%;
+background-color: rgb(216, 216, 216);
+    border: 4px solid rgb(0, 0, 0);
+    margin-top: 3%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-style: initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*CONTACTO*/
+
+
+
+.headercontacto {
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-between
+}
+
+.headercontacto nav {
+    width: 80%;
+}
+
+.headercontacto nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headercontacto nav ul li {
+    list-style: none;
+}
+
+.headercontacto nav ul li a {
+    text-decoration: none;
+}
+
+
+#contactos {
+    width: 85%;
+    height: 25vh;
+    background-color: rgb(216, 216, 216);
+    padding: 40px;
+    border: 5px solid black;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: dashed;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#imagen {
+    background-color: papayawhip;
+    text-align: center;
+    text-decoration: dashed;
+}
+
+
+
+/*PRODUCTOS*/
+
+
+
+.shop {
+color: black;
+text-align: center;
+margin-top: 4%;
+}
+
+.headerproducto { 
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerproducto nav {
+    width: 80%;
+}
+
+.headerproducto nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerproducto nav ul li {
+    list-style: none;
+}
+
+.headerproducto nav ul li a {
+    text-decoration: none;
+}
+
+.catálogo {
+    background-color: rgb(216, 216, 216);
+    border: 4px solid rgb(0, 0, 0);
+    margin-top: 5%;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.catálogo ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 100px;
+        }
+
+.btn {
+    color: brown;
+    background-color: papayawhip;
+    margin-left: 750px;
+    margin-top: 100px;
+    
+}
+
+/*DESKTOP A MOBILE
+tablet 768px
+mobile 480px
+*/
+/*Solo se declara dentro de la mq, los cambios a realizar no agregamos ni repetimos el mismo codigo
+*/
+
+
+
+@media (max-width: 768px){
+    .catálogo ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 100px;
+        }
+
+    #contactos {
+        width: 85%;
+        height: 50vh;
+        background-color: rgba(4, 46, 18, 0.87);
+        padding: 40px;
+        border: 5px solid black;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        text-decoration: dashed;
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+}
+
+
+@media(min-width: 480px) and (max-width: 768px){
+    .catálogo ul {
+        background-color: papayawhip;   
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 100px;
+        }
+}
+
+
+
