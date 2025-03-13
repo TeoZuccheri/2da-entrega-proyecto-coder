@@ -1,0 +1,30 @@
+//Todos mis estilos estaran enlazados acá.
+
+
+/*
+
+Reset - margin, padding, tipografias
+colores
+tamaño de tipografias
+
+cabeza - header
+cuerpo - main
+pie - footer
+
+
+
+
+*/
+//reset
+
+@import './config/mixin';
+@import './config/tipo';
+@import './config/reset';
+@import './config/colors';
+
+
+//layout
+@import './layout/home';
+@import './layout/nosotros';
+@import './layout/contacto';
+//media queries              

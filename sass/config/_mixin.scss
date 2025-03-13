@@ -1,0 +1,19 @@
+//Revisar codigo 
+
+//con parametros (puedo definir que cambiar)
+@mixin size($w, $h, $m, $p) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    padding: $p;
+}
+
+
+//sin parametros (este va a ser u bloque de codigo que podre utilizar)
+
+
+//declaramos el mixi - fragmento de codigo
+@mixin flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+  }

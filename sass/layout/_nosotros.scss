@@ -1,0 +1,26 @@
+/*HEADER SOBRE NOSOTROS*/
+
+.headersobre {
+    background-color: map-get($text-parrafos, papayawhip; )
+    display: flex;
+    justify-content: space-between;
+
+    &nav {
+        width: $medium;
+
+        &ul {
+            @include flex-spacebetween;
+
+            &li {
+                list-style: none;
+
+                &a{
+                    text-decoration: dashed;
+                }
+            }
+        }
+    } 
+}
+
+
+

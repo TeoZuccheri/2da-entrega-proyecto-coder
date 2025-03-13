@@ -1,0 +1,31 @@
+
+
+//colores
+
+
+$white: #ffffff;
+$black: #000000;
+$gray: #5f5f5f;
+$green: #435332;
+$papayawhip: papayawhip;
+$red: red;
+
+
+$text-parrafos: (
+    color: papayawhip;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+)
+
+
+
+//map-get ($text-parrafos, fontsz) =5em
+
+
+$size:(
+    xs: 3px,
+    sm: 5px,
+    md: 10px,
+    lg: 20px,
+);
